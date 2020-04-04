@@ -1,3 +1,6 @@
+## 0.2.0
+* Minor improvements
+
 ## 0.1.1
 * Fixed preview image
 
