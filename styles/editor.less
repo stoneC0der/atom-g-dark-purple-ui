@@ -82,11 +82,13 @@ atom-text-editor[mini] {
 
   input[type="checkbox"],
   input[type="text"],
+  input[type="number"],
+  textarea,
   select.form-control,
   select.form-control:hover,
   select.form-control:focus, {
     background-color: @base-background-color;
-    border: 1px solid lighten(@base-background-color, 3%);
+    border: 1px solid lighten(@base-background-color, 8%);
   }
 
   select.form-control {
@@ -131,15 +133,19 @@ atom-text-editor[mini] {
   }
 
   .settings-panel label {
-    color: @text-color;
+    color: lighten(@text-color, 1%);
   }
 
   .setting-description {
-    color: lighten(@text-color, 20%);
+    color: lighten(@text-color, 5%);
   }
 
   .text {
-    color: darken(@text-color, 10%);
+    color: darken(@text-color, 5%);
+  }
+  .section atom-text-editor[mini] {
+    border: 1px solid lighten(@base-background-color, 5%);
+    border-radius: 4px;
   }
 }
 .input-select {
